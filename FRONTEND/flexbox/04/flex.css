@@ -1,0 +1,12 @@
+.container{
+    display: flex;
+    border: 2px solid black;
+    /* width: 600px; */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    /* justify content always work for main axis */
+    /* alighitems items inorder to work we should gibe the height of the container */
+    
+
+}

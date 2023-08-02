@@ -1,0 +1,128 @@
+<!-- 
+ javascript has a concept known as DOM 
+ DOM means document object model
+ using this we can add, delete,append, modify the html using js script 
+ DOM represents the page so that program can change the document structure and style
+"document" is the entty point of the website elements 
+
+  -->
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>prasad</h1>
+    <h2 id="js">name</h2>
+    <h2 id="js1"><span>name</span></h2> 
+    <p>is a good boy</p>
+    <p>hello</p>
+    <p>world</p>
+    <h2 class="prasad">one</h2>
+    <h2 class="prasad">two</h2>
+    <h2 class="prasad">three</h2>
+    <ul>
+      <li>one</li>
+      <li>two</li>
+      <li>three</li>
+    </ul>
+
+    <script>
+
+      // ROOT
+        // console.log(document) // it returns whole code we have witten
+        // console.log(window.document) // it returns whole document 
+        // if we write "window" we are pointing to the global
+        // if we do not wtite window also no porblem . Every thing by default points to the global object
+       
+        // console.log(document.documentElement) //it gives the elements of the documemt (head , body ) 
+        
+
+      // CHILDERN
+        // console.log(document.body.children) // it gives all the children of the body 
+        // console.log(document.body.firstElementChild)  //it gives the first  tag of the body 
+
+      //FINDING THE ELEMENT
+       // if we want to acess the data of the using "id "of html elements we can use
+        // let data = document.getElementById("js")
+        // console.log(data) //it returns total tag
+        // if we want only content in that tag we should use 
+        // let data1 = document.getElementById("js").innerText
+        // console.log(data1) //this gives name as output
+        // there is another method for getting above output i.e
+        // let data2 = document.getElementById("js").innerHTML
+        // console.log(data2) // it also returns "name" in this case but if out element consists of another alament init it returns the inner element
+        // e.g 
+        // in the case of h2 tag with id "js1" it returns 
+        // let data3 = document.getElementById("js1").innerHTML
+        // console.log(data3) //<span>name</soan>
+        
+        // if we want to get the data of elemrnts using classes we can use
+        // let data4 = document.getElementsByClassName("prasad")
+        // console.log(data4)
+        // since we have 3 classes with same name it goves the 3 classes in a list
+        // if we want to access the data of the element we should use [] to get because it is list
+        // let data5 = document.getElementsByClassName("prasad")[0]
+        // console.log(data5) // it gives the first element with class  "prasad"
+        // if we want innertext of that html we should use 
+        // let data6 = document.getElementsByClassName("prasad")[0].innerText
+        // console.log(data6) // one
+
+        // if we also access the elements using the tag names.
+        // console.log(document.getElementsByTagName("h1")) //it returns HTML collections (i.e list)
+        // console.log(document.getElementsByTagName("h1")[0].innerHTML) //it returns prasad
+
+        // queryselector  = we can access elements by passsing either classname or tagname or id using queryselector
+
+        // console.log(document.querySelector("p")) //it returns the first "p" tag and it does not return "p" tags after it finds the first
+        // console.log(document.querySelector("p").innerText) // gives the inner text in the "p" tag 
+
+        // if we want all the tags with "p" we can use
+        // console.log(document.querySelectorAll("p")) //it returns a list which contining "p tags"
+
+        // if we want to add attributes (class or id) we can use setAttribute 
+        // let val = document.querySelectorAll("p")
+        // val[1].setAttribute("id","js") // it sets the id with value "js"
+        // if we want to add multiple classes 
+        // val[1].classList.add("prasad","name") //it adds "prasad" and  "name" as classes 
+        // if we want to change the content in the tags we can use 
+        // val[1].textContent = "hello my name is prasad" 
+        
+        // Adding the elements or creatint the elements
+
+        // const title = document.createElement("h1") // it is used to create elements
+
+        // title.className = "title"; //giving the class name to created element
+        // title.style.fontSize = "50px" //giving the fontsize to the created element
+        // title.textContent = "my name is prasad" // addingcocntent inside the crated tag
+
+        // // if we want to inject the created "h1" tag into body of html we can use
+
+        // document.body.appendChild(title) //injected "h1" to tehe body
+
+
+        // DELETING
+        // inorder to delete we need to find first the element that we wanted to delete
+        // const ul = document.querySelector("ul")
+        // const list = document.querySelectorAll("li")
+        // for(list of lists){
+        //   ul.removeChild(list)
+        // }
+
+
+        //add events listners
+        
+        document.addEventListener("click",hello); //it takes two parameters 1)event 2)function
+        function hello(){
+          document.getElementById("js").innerText = "fafygausdhpifhdkjnfidkjnfdkvnfvh,d"
+        }
+        
+
+
+
+    </script>
+  </body>
+  </html>

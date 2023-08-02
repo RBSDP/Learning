@@ -1,0 +1,11 @@
+body{
+    color: aqua;
+}
+
+.button{
+    background-color:#4DD637 ;
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 10px 10px;
+    margin-right: 5px;
+}

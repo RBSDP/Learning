@@ -1,0 +1,17 @@
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    margin: 10px;
+    width: 90px;
+    border-radius: 30px;
+    border: none;
+    background-color:aqua;
+    padding: 10px;
+    cursor: pointer;
+}

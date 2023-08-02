@@ -1,0 +1,54 @@
+/* for inline elements we can use dispaly:inline-grid */
+/* normal grid acts as block level */
+.container{
+    background-color: red;
+    width: 500px;
+    height: 500px;
+    display: grid;
+    /* it displays all the childs of the container elements as grid */
+    grid-template-columns: 1fr 1fr 1fr;
+    /* here 3 "1fr" means it divides total row or column portions into 3 portions */
+    grid-template-rows: 1fr 1fr 1fr;
+    /* we can also mention how much pixels we want to give to each grid for both columns and rows  */
+    /* grid-template-columns: 100px 100px; */
+    /* from above property 2 colums are formed */
+    /* grid-template-rows: 100px 100px 100px; */
+    /* from the acove property 3 rows are formed */
+
+    /* row gap gives the gap btw rows */
+    row-gap: 10px;
+    /* column gap gives the gap between columns  */
+    column-gap: 10px;
+    /* we can apply a property known as "justify-items" which allows use to justify items in the container */
+    justify-items: center;
+    /* from the above property all the items in the container goes to the center of the grid */
+    /* we can center items horzontally using "justify-items" */
+
+    /* we can canter items verically using a"lign-items : center "*/
+    /* align-items: center; */
+
+    /* "place-items" combines the properties of "justify-items" "align-items" */
+    place-items: center;
+}
+.item{
+    background-color: white;
+    width: 100px; 
+    height: 100px;
+}
+
+
+.item-1{
+    /* if we want a particular items to occupy more grids we can use */
+    /* grid-row-start: 1;
+    grid-row-end: 3; */
+
+
+    /* from the above properties the grid starts from first line and ends at 3rd line */
+    
+    /* there is another property known as justify-self . it is applied on the items of the grid elements
+    it helps to move elemnets in that particular grid to different positions in the grid*/
+    /* justify-self: center;   */
+
+     /* "place-items" combines the properties of "justify-self "align-self" */
+     /* place-self: center; */
+}

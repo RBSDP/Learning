@@ -1,0 +1,28 @@
+.container{
+    display: flex;
+    border: 2px solid black;
+    width: 700px;
+    height: 500px;
+    /* justify-content: center;
+    align-items: center; */
+ /* justify content always work for main axis */
+    /* alighitems items inorder to work we should gibe the height of the container */
+
+
+}
+/* order is used to change the position of the container elements. if the element oder is less it shoes in first position 
+less the order first the position */
+.one{
+    order: -2;
+    /* it shows second in order */
+}
+.two{
+    order:-1 ;
+    /* it shows third in order */
+}
+
+.container  div:nth-child(6){
+    order: -3;
+    /* it shows first in the order */
+}
+

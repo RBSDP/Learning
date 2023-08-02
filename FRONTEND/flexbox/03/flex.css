@@ -1,0 +1,11 @@
+.container{
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    border: 2px solid black;
+    /* align-items:center; */
+    align-items:flex-end;
+    /* align-items: baseline; */
+    /* flex-direction: column;   */  /*for mobile */
+}
+/* in web main axis is from left to right i.e horizontal */

@@ -1,0 +1,18 @@
+.container{
+    display: flex;
+    border: 2px solid black;
+    /* width: 1000px; */
+    /* flex-wrap: wrap;
+    flex-wrap: nowrap;
+    flex-wrap: wrap-reverse; */
+    /* there is a property known as flex-wrap it stop the elements in the container going out of bound */
+
+
+}
+.container div{
+    flex-grow: 1;
+}
+
+.container div:nth-child(2){
+    flex-grow: 2;
+}
